@@ -1,6 +1,6 @@
 class Post
    
-    def initialize(title,body,author, hashtag)
+    def initialize(title,body,author)
         @title = title
         @body = body
         @author = author
@@ -40,7 +40,7 @@ class Post
     end
 
     def remove_hashtag
-        @hashtag.pop(hashtag)
+        @hashtag.delete(hashtag)
     end
 end
 
