@@ -40,6 +40,21 @@ end
  post_3 = Post.new("50 of the most colorful photos taken in 2019", " Agora, a free photography app, has rounded up the most colorful photos taken in 2019. Photographers from around the world submitted their work to Agora as part of the #Colorful2019 contest, and 50 finalists were chosen in August. In September, a photographer named Thijs Peters took home the $1,000 prize for his image of rainbow-colored rooftops, entitled Malang.", " Amanda Krause")
 
  puts "Post title: #{post_1.title}\n Post body is: #{post_1.body}\n By: #{post_1.author}"
- puts new_post.body
- puts new_post.author
+ puts "Post title: #{post_2.title}\n Post body is: #{post_2.body}\n By: #{post_2.author}"
+ puts "Post title: #{post_3.title}\n Post body is: #{post_3.body}\n By: #{post_3.author}"
 
+ puts post_1.title=("True facts about witches")
+ puts post_1.body=("Witches fly on brooms")
+ puts post_1.author=("Me") 
+ puts "Post title: #{post_1.title}\n Post body is: #{post_1.body}\n By: #{post_1.author}"
+
+ puts post_2.title=("Post 2 title")
+ puts post_2.body=("Post 2 is awesome")
+ puts post_2.author=("You") 
+ puts "Post title: #{post_2.title}\n Post body is: #{post_2.body}\n By: #{post_2.author}"
+
+ puts post_3.title=("New post 3")
+ puts post_3.body=("It's Halloween!")
+ puts post_3.author=("Coder Academy class") 
+ puts "Post title: #{post_3.title}\n Post body is: #{post_3.body}\n By: #{post_3.author}"
+ puts Post.class
