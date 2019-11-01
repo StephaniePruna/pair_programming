@@ -1,9 +1,10 @@
 class Post
    
-    def initialize(title,body,author)
+    def initialize(title,body,author, hashtag)
         @title = title
         @body = body
         @author = author
+        @hashtag = []
     end
 
     def title #This is a getter
@@ -29,6 +30,18 @@ class Post
     def author=(author)
         @author = author
     end
+
+    def hashtag
+        @hashtag
+    end
+
+    def add_hashtag
+        @hashtag.push(hashtag)
+    end
+
+    def remove_hashtag
+        @hashtag.pop(hashtag)
+    end
 end
 
 #  new_post = Post.new("7 daily Habits", "Dream Big", "Stephanie Pruna")
@@ -43,9 +56,9 @@ end
  puts "Post title: #{post_2.title}\n Post body is: #{post_2.body}\n By: #{post_2.author}"
  puts "Post title: #{post_3.title}\n Post body is: #{post_3.body}\n By: #{post_3.author}"
 
- puts post_1.title=("True facts about witches")
- puts post_1.body=("Witches fly on brooms")
- puts post_1.author=("Me") 
+ post_1.title=("True facts about witches")
+ post_1.body=("Witches fly on brooms")
+ post_1.author=("Me") 
  puts "Post title: #{post_1.title}\n Post body is: #{post_1.body}\n By: #{post_1.author}"
 
  puts post_2.title=("Post 2 title")
